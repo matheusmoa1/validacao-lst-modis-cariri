@@ -1,0 +1,19 @@
+timestamp,nome_teste,correlacao_pearson,mae,rmse,bias_media,desvio_padrao_diferencas,total_de_dias
+2025-04-27_19-31-21,Baseline sem filtros (Buffer 5 km),0.748,4.389,5.463,2.652,4.777,3591
+2025-04-27_19-52-01,Baseline sem filtros (Buffer 1 km),0.725,4.904,6.001,4.114,4.37,3099
+2025-04-27_20-07-04,Baseline sem filtros (Buffer 3 km),0.741,4.6,5.715,3.339,4.638,3393
+2025-04-27_20-27-36,Baseline sem filtros (Buffer 7 km),0.748,4.217,5.25,2.182,4.775,3748
+2025-04-27_20-40-07,Baseline sem filtros (Buffer 10 km),0.754,4.044,5.023,1.802,4.69,3906
+2025-04-27_21-01-11,Baseline sem filtros (Buffer 15 km),0.757,3.864,4.779,1.289,4.602,4133
+2025-04-27_21-14-26,Baseline sem filtros (Buffer 20 km),0.761,3.728,4.612,0.988,4.505,4356
+2025-04-27_21-31-49,Baseline sem filtros (Buffer 25 km),0.759,3.685,4.58,0.961,4.478,4570
+2025-04-28_00-50-07,Baseline sem filtros (Buffer 25 km QA mask(1)),0.718,3.876,4.841,2.751,3.984,3241
+2025-04-28_20-00-50,Baseline in loco x satelite 12h,0.555,14.267,15.321,14.234,5.669,2823
+2025-04-28_21-04-24,Baseline in loco x satelite interpolado 1300/1400,0.652,11.763,12.874,11.673,5.43,2830
+2025-04-28_21-06-03,Baseline in loco x satelite interpolado 1300 1400,0.652,11.763,12.874,11.673,5.43,2830
+2025-04-28_22-55-33,Baseline in loco x satelite interpolado 1300 1400 QA masked,0.679,15.108,15.638,15.108,4.039,630
+2025-05-04_19-32-59,Baseline in loco 1300 1400 QA <= 2 x satelite,0.669,14.982,15.581,14.982,4.279,1014
+2025-05-04_20-11-53,Baseline in loco interpolado 1300 1400 x satelite median sem QA,0.648,11.795,12.908,11.696,5.462,2830
+2025-05-04_20-52-19,Baseline in loco interpolado 1300 1400 x satelite pixel central,0.651,12.498,13.434,12.449,5.049,2324
+2025-05-04_20-53-23,Baseline in loco interpolado 1300 1400 x satelite pixel central ,0.651,12.498,13.434,12.449,5.049,2324
+2025-05-04_20-54-43,Baseline in loco interpolado 1300 1400 x satelite pixel central ,0.651,12.498,13.434,12.449,5.049,2324

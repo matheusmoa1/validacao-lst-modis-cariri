@@ -1,0 +1,55 @@
+var ponto_monteiro = ee.Geometry.Point([-37.12472221, -7.89444444]);
+var area_monteiro = ponto_monteiro.buffer(1000);
+
+var modis = ee.ImageCollection('MODIS/061/MYD11A1')
+              .filterBounds(area_monteiro)
+              .select(['LST_Day_1km', 'QC_Day'])
+              .map(function(image) {
+                var lst_celsius = image.select('LST_Day_1km').multiply(0.02).subtract(273.15);
+                var qc_day = image.select('QC_Day');
+                
+                return lst_celsius.addBands(qc_day)
+                          .rename(['LST_Celsius', 'QC_Day'])
+                          .copyProperties(image, ['system:time_start']);
+              });
+
+
+var extrairInfo = function(image) {
+  var reducer = image.reduceRegion({
+    reducer: ee.Reducer.mean(),
+    geometry: area_monteiro,
+    scale: 1000,
+    maxPixels: 1e13
+  });
+  
+  return ee.Feature(null, {
+    'data': image.date().format('YYYY-MM-dd'),  // Data formatada
+    'LST_Celsius': reducer.get('LST_Celsius'),  // Temperatura
+    'QC_Day': reducer.get('QC_Day'),            // Qualidade
+    'timestamp_utc': image.get('system:time_start')
+  });
+};
+
+
+var periodo1 = modis.filterDate('2000-01-01', '2009-12-31')
+                    .map(extrairInfo)
+                    .filter(ee.Filter.notNull(['LST_Celsius']));
+
+var periodo2 = modis.filterDate('2010-01-01', '2024-12-31')
+                    .map(extrairInfo)
+                    .filter(ee.Filter.notNull(['LST_Celsius']));
+
+
+Export.table.toDrive({
+  collection: periodo1,
+  description: 'Monteiro_MYD11A1_LST_QA_2000_2009_QA',
+  folder: 'GEE_EXPORT',
+  fileFormat: 'CSV'
+});
+
+Export.table.toDrive({
+  collection: periodo2,
+  description: 'Monteiro_MYD11A1_LST_QA_2010_2024_QA',
+  folder: 'GEE_EXPORT',
+  fileFormat: 'CSV'
+});

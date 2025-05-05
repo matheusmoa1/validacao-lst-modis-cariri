@@ -1,0 +1,162 @@
+[
+    {
+        "timestamp": "2025-04-27_19-31-21",
+        "nome_teste": "Baseline sem filtros (Buffer 5 km)",
+        "correlacao_pearson": 0.748,
+        "mae": 4.389,
+        "rmse": 5.463,
+        "bias_media": 2.652,
+        "desvio_padrao_diferencas": 4.777,
+        "total_de_dias": 3591
+    },
+    {
+        "timestamp": "2025-04-27_19-52-01",
+        "nome_teste": "Baseline sem filtros (Buffer 1 km)",
+        "correlacao_pearson": 0.725,
+        "mae": 4.904,
+        "rmse": 6.001,
+        "bias_media": 4.114,
+        "desvio_padrao_diferencas": 4.37,
+        "total_de_dias": 3099
+    },
+    {
+        "timestamp": "2025-04-27_20-07-04",
+        "nome_teste": "Baseline sem filtros (Buffer 3 km)",
+        "correlacao_pearson": 0.741,
+        "mae": 4.6,
+        "rmse": 5.715,
+        "bias_media": 3.339,
+        "desvio_padrao_diferencas": 4.638,
+        "total_de_dias": 3393
+    },
+    {
+        "timestamp": "2025-04-27_20-27-36",
+        "nome_teste": "Baseline sem filtros (Buffer 7 km)",
+        "correlacao_pearson": 0.748,
+        "mae": 4.217,
+        "rmse": 5.25,
+        "bias_media": 2.182,
+        "desvio_padrao_diferencas": 4.775,
+        "total_de_dias": 3748
+    },
+    {
+        "timestamp": "2025-04-27_20-40-07",
+        "nome_teste": "Baseline sem filtros (Buffer 10 km)",
+        "correlacao_pearson": 0.754,
+        "mae": 4.044,
+        "rmse": 5.023,
+        "bias_media": 1.802,
+        "desvio_padrao_diferencas": 4.69,
+        "total_de_dias": 3906
+    },
+    {
+        "timestamp": "2025-04-27_21-01-11",
+        "nome_teste": "Baseline sem filtros (Buffer 15 km)",
+        "correlacao_pearson": 0.757,
+        "mae": 3.864,
+        "rmse": 4.779,
+        "bias_media": 1.289,
+        "desvio_padrao_diferencas": 4.602,
+        "total_de_dias": 4133
+    },
+    {
+        "timestamp": "2025-04-27_21-14-26",
+        "nome_teste": "Baseline sem filtros (Buffer 20 km)",
+        "correlacao_pearson": 0.761,
+        "mae": 3.728,
+        "rmse": 4.612,
+        "bias_media": 0.988,
+        "desvio_padrao_diferencas": 4.505,
+        "total_de_dias": 4356
+    },
+    {
+        "timestamp": "2025-04-27_21-31-49",
+        "nome_teste": "Baseline sem filtros (Buffer 25 km)",
+        "correlacao_pearson": 0.759,
+        "mae": 3.685,
+        "rmse": 4.58,
+        "bias_media": 0.961,
+        "desvio_padrao_diferencas": 4.478,
+        "total_de_dias": 4570
+    },
+    {
+        "timestamp": "2025-04-28_00-50-07",
+        "nome_teste": "Baseline sem filtros (Buffer 25 km QA mask(1))",
+        "correlacao_pearson": 0.718,
+        "mae": 3.876,
+        "rmse": 4.841,
+        "bias_media": 2.751,
+        "desvio_padrao_diferencas": 3.984,
+        "total_de_dias": 3241
+    },
+    {
+        "timestamp": "2025-04-27_19-52-01",
+        "nome_teste": "Baseline sem filtros (Buffer 1 km)",
+        "correlacao_pearson": 0.725,
+        "mae": 4.904,
+        "rmse": 6.001,
+        "bias_media": 4.114,
+        "desvio_padrao_diferencas": 4.37,
+        "total_de_dias": 3099
+    },
+    {
+        "timestamp": "2025-04-28_20-00-50",
+        "nome_teste": "Baseline in loco x satelite 1330",
+        "correlacao_pearson": 0.555,
+        "mae": 14.267,
+        "rmse": 15.321,
+        "bias_media": 14.234,
+        "desvio_padrao_diferencas": 5.669,
+        "total_de_dias": 2823
+    },
+    {
+        "timestamp": "2025-04-28_21-06-03",
+        "nome_teste": "Baseline in loco interpolado 1300 1400 x satelite",
+        "correlacao_pearson": 0.652,
+        "mae": 11.763,
+        "rmse": 12.874,
+        "bias_media": 11.673,
+        "desvio_padrao_diferencas": 5.43,
+        "total_de_dias": 2830
+    },
+    {
+        "timestamp": "2025-04-28_22-55-33",
+        "nome_teste": "Baseline in loco interpolado 1300 1400 x satelite QA <= 1",
+        "correlacao_pearson": 0.679,
+        "mae": 15.108,
+        "rmse": 15.638,
+        "bias_media": 15.108,
+        "desvio_padrao_diferencas": 4.039,
+        "total_de_dias": 630
+    },
+    {
+        "timestamp": "2025-05-04_19-32-59",
+        "nome_teste": "Baseline in loco interpolado 1300 1400 x satelite QA <= 2",
+        "correlacao_pearson": 0.669,
+        "mae": 14.982,
+        "rmse": 15.581,
+        "bias_media": 14.982,
+        "desvio_padrao_diferencas": 4.279,
+        "total_de_dias": 1014
+    },
+    {
+        "timestamp": "2025-05-04_20-11-53",
+        "nome_teste": "Baseline in loco interpolado 1300 1400 x satelite median sem QA",
+        "correlacao_pearson": 0.648,
+        "mae": 11.795,
+        "rmse": 12.908,
+        "bias_media": 11.696,
+        "desvio_padrao_diferencas": 5.462,
+        "total_de_dias": 2830
+    },
+    {
+        "timestamp": "2025-05-04_20-54-43",
+        "nome_teste": "Baseline in loco interpolado 1300 1400 x satelite pixel central ",
+        "correlacao_pearson": 0.651,
+        "mae": 12.498,
+        "rmse": 13.434,
+        "bias_media": 12.449,
+        "desvio_padrao_diferencas": 5.049,
+        "total_de_dias": 2324
+    }
+]
